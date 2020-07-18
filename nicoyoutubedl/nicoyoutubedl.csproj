@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>nicoyoutubedl.Nicoyoutubedl</StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediaToolkit" Version="1.1.0.1" />
+    <PackageReference Include="MusicBrainz.Core" Version="1.0.1" />
+    <PackageReference Include="runtime.debian.9-x64.Microsoft.NETCore.DotNetHost" Version="1.1.13" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+    <PackageReference Include="TagLibSharp" Version="2.2.0" />
+    <PackageReference Include="VideoLibrary" Version="3.0.2" />
+  </ItemGroup>
+
+</Project>
